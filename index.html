@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="painter.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/shape.js"></script>
+    <script src="js/painter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="menu">
+            <li class="parent hasson file">
+                <div >文件</div>
+                <ul class="son">
+
+                    <li>新建</li>
+                    <li>后退</li>
+                    <li>保存</li>
+                    <div class="clear"></div>
+                </ul>
+            </li>
+            <li class="parent hasson shapes">
+                <div >形状</div>
+                <ul class="son">
+                    <li data-role="rect">矩形</li>
+                    <li data-role="line">线条</li>
+                    <li data-role="circle">圆形</li>
+                    <li data-role="pen">铅笔</li>
+                    <li data-role="start">星形</li>
+                    <div class="clear"></div>
+                </ul>
+
+            </li>
+            <li class="parent hasson type">
+                <div >填充类型</div>
+                <ul class="son">
+                    <li data-role="stroke">边框</li>
+                    <li data-role="fill">填色</li>
+                    <div class="clear"></div>
+
+                </ul>
+
+            </li>
+            <li class="parent bordercolor" >
+                <div >线条颜色</div>
+                <div class="son">
+                    <input type="color">
+                </div>
+            </li>
+            <li class="parent fillcolor" >
+                <div >填充颜色</div>
+                <div class="son">
+                    <input type="color" >
+                </div>
+            </li>
+            <li class="parent hasson borderwidth">
+                <div >边框粗细</div>
+                <ul class="son">
+                    <li borderWidth="1">细</li>
+                    <li borderWidth="5">中</li>
+                    <li borderWidth="10">粗</li>
+                    <div class="clear"></div>
+                </ul>
+            </li>
+
+            <li class="parent hasson xpsize">
+                <div >橡皮</div>
+                <ul class="son">
+                    <li data-role="8">小</li>
+                    <li data-role="16">中</li>
+                    <li data-role="24">大</li>
+                    <div class="clear"></div>
+                </ul>
+            </li>
+            <li class="parent select">
+                <div >选择</div>
+            </li>
+
+        </ul>
+        <div class="box">
+            <div class="copy">
+
+            </div>
+            <canvas></canvas>
+            <div class="eraser" ></div>
+            <div class="selectarea"></div>
+        </div>
+
+    </div>
+</body>
+</html>
